@@ -1,0 +1,733 @@
+body {
+    background-color: #ffffff; /* Fondo blanco */
+    background-size: cover; /* Asegura que la imagen cubra toda el área de la pantalla */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin: 0; /* Elimina cualquier margen por defecto */
+    padding: 0; /* Elimina cualquier padding por defecto */
+    height: 100vh; /* Altura mínima del contenido de la página para cubrir toda la pantalla */
+}
+
+header {
+    font-size: small;;
+    font-weight: lighter;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #f8fafa; /* Fondo oscuro para el encabezado (color de respaldo) */
+    background-image: url(deevincci\ imagenes/headerpp.jpg); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el área del encabezado */
+    background-position: center; /* Centra la imagen en el encabezado */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: #fffefe; /* Color de texto blanco */
+    padding: 10px 100px; /* Relleno alrededor del contenido */
+    text-align: center; /* Texto centrado */
+    line-height: 1.6; /* Ajusta el espaciado entre líneas */
+    letter-spacing: 3em; /* Ajusta el espaciado entre caracteres */
+    
+
+
+
+    
+}
+
+
+
+
+
+
+nav {
+    background-color: #fefefe; /* Fondo oscuro para la navegación */
+    text-align: center; /* Centra los enlaces de navegación */
+    
+padding: 15px 0; /* Relleno arriba y abajo de los enlaces */
+    
+}
+
+nav a {
+
+    letter-spacing: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Fuente del texto */
+    font-size: 7px; /* Tamaño de fuente */
+    color: hsl(0, 2%, 16%); /* Color del texto */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    padding: 8px 15px; /* Relleno alrededor del texto */
+    transition: color 0.3s; /* Transición suave del color */
+}
+
+nav .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+nav .dropdown .dropbtn {
+    background-color: #feffff;
+    color: rgb(4, 31, 30);
+    border: none;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+nav .dropdown .dropdown-content {
+    display: none;
+    border-radius: 8px;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav .dropdown .dropdown-content a {
+    color: #373636;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+nav .dropdown .dropdown-content a:hover {
+    background-color: #f8950c;
+    border-radius: 8px;
+}
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav .dropdown:hover .dropbtn {
+    background-color: #fafcfc;
+}
+
+nav a:hover {
+    color: #f8950c; /* Color al pasar el ratón */
+}
+
+h2 {
+    padding-left: 140px;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+}
+
+h3 {
+    color: #feffff; /* Color del texto */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+}
+
+ul {
+    color: #063c3d; /* Color del texto */
+    text-align: left; /* Alinea el texto a la izquierda */
+    max-width: 50%; /* Limita el ancho de la sección a la mitad de la página */
+    margin: 0 auto; /* Centra la sección horizontalmente */
+    text-align: justify; /* Justifica el texto */
+}
+
+/* Estilo para la columna */
+.column {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se alineen verticalmente */
+    gap: 20px; /* Espacio entre el párrafo y la imagen */
+    padding: 40px;
+}
+
+/* Estilo para el párrafo */
+.column p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fdfdfd; /* Color del texto en párrafos */
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+
+
+/* Estilos para el contenedor de texto */
+.text-container {
+    display: flex;
+
+    flex-direction: column;
+    gap: 20px; /* Espacio entre las cajas de texto */
+    padding: 20px;
+    background-color: #ffffff; /* Color de fondo claro */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 20px 0; /* Espacio vertical alrededor del contenedor */
+}
+
+
+    
+
+/* Estilos para los párrafos */
+.text-box p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 11px;
+    line-height: 1.6;
+    color: #333333; /* Color de texto oscuro */
+    text-align: justify; /* Justificación del texto */
+    margin: 0; /* Sin margen alrededor de los párrafos */
+}
+
+/* Estilos responsivos */
+@media (min-width: 768px) {
+    .text-container {
+        flex-direction: row; /* Disposición en fila para pantallas más grandes */
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples filas si es necesario */
+    }
+
+    .text-box {
+        flex: 1; /* Las cajas de texto toman el mismo ancho */
+        margin: 10px; /* Espacio entre las cajas de texto */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Estilo para el contenedor de la imagen */
+.image-container {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    border-radius: 20px;
+    padding-top: 43px; /* Espacio encima de la imagen */
+    padding-bottom: 85px;
+}
+
+/* Estilo para la sección de la galería de texto */
+.gallery-text {
+    padding: 20px;
+}
+
+/* Estilo para el contenedor de la cuadrícula de texto */
+.gallery-text-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 20px; /* Espacio entre las columnas */
+}
+
+/* Estilo para las columnas de texto */
+.text-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre los párrafos */
+}
+
+/* Estilo para los párrafos en las columnas de texto */
+.text-column p {
+
+    padding-bottom: 30%;
+    padding-top: 30%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+    color: #5f5f5f;
+    text-align: justify;
+    margin: 0;
+}
+
+/* Estilo para la sección de dos columnas */
+.two-columns {
+    padding: 2px;
+}
+
+/* Contenedor de la cuadrícula */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-rows: repeat(2, auto); /* Filas automáticas */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+/* Estilo para los elementos de la cuadrícula */
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para el contenedor aislado */
+.isolated-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para el contenedor de la imagen especial */
+.image-container-special {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Espacio entre el párrafo y la imagen */
+}
+
+/* Estilo para la imagen en el contenedor especial */
+.image-container-special img {
+    grid-column: initial;
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    max-width: 700px; /* Puedes ajustar este valor según el ancho del texto */
+    height: auto; /* Mantiene la relación de aspecto */
+    border-radius: 8px; /* Esquinas redondeadas */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+}
+
+/* Estilo para el contenedor de las imágenes */
+.image-container {
+   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+/* Estilo para las imágenes */
+.image-container img {
+
+    padding-bottom: 60px;
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    grid-auto-rows: min-content;
+    max-width: 500px; /* Ancho máximo de las imágenes */
+    height: 500px; /* Mantiene la relación de aspecto */
+    border-radius: 10px; /* Esquinas redondeadas */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+}
+
+.additional-content {
+    
+    padding: 40px 20px; /* Espacio interno alrededor del contenido */
+    background-color: #ffffff; /* Color de fondo para diferenciar la sección */
+    border-radius: 8px; /* Esquinas redondeadas */
+}
+
+/* Estilo para el contenido dentro de la nueva sección */
+.additional-content .content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.additional-content h2 {
+    color: #feffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+.highlight {
+    background-color: #f8950c; /* Color de fondo para el resaltado */
+    color: #ffffff; /* Color del texto */
+    padding: 2px 4px; /* Espaciado alrededor del texto */
+    border-radius: 3px; /* Bordes redondeados */
+    font-weight: bold; /* Texto en negrita */
+}
+
+
+.additional-content p {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-variant: initial;
+    font-size: 1em;
+    font-style: italic;
+    color: #b7b6b6;
+    padding-bottom: 20px;
+    text-align: justify;
+    letter-spacing: 0.1em; /* Espaciado entre caracteres */
+}
+
+/* Estilo para el texto */
+.grid-item p {
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    color: #5f5f5f;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+/* Estilos generales para el contenedor de la cuadrícula */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2px;
+    padding: 2px;
+}
+
+/* Estilos para los elementos de la cuadrícula */
+.grid-item {
+  
+    padding: 20px;
+
+    
+    border-radius: 8px;
+    
+}
+
+/* Estilos para los contenedores de imágenes */
+
+.image-container-special {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.image-container-special img {
+    padding-bottom: 200%;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+
+
+
+/* Estilos adicionales para la sección aislada */
+.isolated-container {
+    overflow: hidden;
+    white-space: nowrap;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 20px 0;
+    position: relative;
+}
+
+/* Estilos para el contenedor de los comentarios */
+.comments-wrapper {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scrollComments 200s linear infinite;
+}
+
+/* Estilos para los comentarios */
+.comment {
+    display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 9.9;
+    color: #505050;
+    text-align: justify;
+    letter-spacing: 1.0px;
+    margin-right: 50px; /* Espacio entre los comentarios */
+}
+
+/* Animación para desplazar los comentarios de derecha a izquierda */
+.scroll-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scrollComments 45s linear infinite;
+}
+
+
+
+
+
+@keyframes scrollComments {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+header img {
+    width: 125px; /* Ancho estándar del logo */
+    height: auto; /* Mantiene la relación de aspecto */
+    margin-right: 20px; /* Espacio entre el logo y el título */
+    vertical-align: middle; /* Alinea el logo verticalmente con el texto */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza la transición de transformación y sombra */
+}
+
+
+
+
+.two-columns {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Helvetica, sans-serif;
+    font-size: 22px;
+    font-stretch: extra-expanded;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre columnas */
+    padding: 40px;
+}
+
+.two-columns .column {
+    flex: 1; /* Cada columna toma igual ancho */
+    min-width: 300px; /* Ancho mínimo de cada columna */
+}
+
+/* Estilo para la sección de la galería */
+.gallery {
+    padding: 20px;
+}
+
+/* Estilo para el contenedor de la cuadrícula de la galería */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-gap: 100px; /* Espacio entre las imágenes */
+}
+
+/* Estilo para las imágenes en la galería */
+.gallery-grid img {
+    padding-top: 70px;
+    padding-bottom: 100px;
+    width: 100%; /* Asegura que las imágenes tomen el ancho completo de su celda */
+    height: 400px; /* Establece una altura fija para las imágenes */
+    object-fit: cover; /* Asegura que las imágenes cubran el área de su celda sin distorsión */
+    border-radius: 11px; /* Esquinas redondeadas para las imágenes */
+}
+
+/* Common styles for all sections */
+.section-background {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 70px; /* Add padding for spacing */
+    border-radius: 8px; /* Rounded corners */
+    color: #ffffff; /* Text color */
+    margin-bottom: 35px; /* Space between sections */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating */
+    height: 400px; /* Set a fixed height for all sections */
+    display: flex; /* Use flexbox to center content */
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: center; /* Align content to the left vertically */
+    align-items: left; /* Align content to the left horizontally */
+}
+
+.section-background h2 {
+    color: #ffffff;
+    margin-top: 45px; /* Top margin for headings */
+}
+
+.section-background p {
+    color: #ffffff;
+    margin-bottom: 1em; /* Space between paragraphs */
+}
+
+/* Estilo común para las secciones con fondo animado */
+.section-background {
+
+    background-size: cover; /* Asegura que la imagen cubra toda el área de la sección */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 400px; /* Altura fija para todas las secciones */
+    display: flex; /* Usa flexbox para centrar el contenido */
+    flex-direction: column; /* Arregla el contenido verticalmente */
+    justify-content: left; /* Alinea el contenido a la izquierda verticalmente */
+    align-items: left; /* Alinea el contenido a la izquierda horizontalmente */
+    animation: moveBackground 60s linear infinite; /* Animación de fondo en movimiento */
+    padding-bottom: 80px;
+}
+
+/* Animación keyframes para mover el fondo */
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* Specific backgrounds for each section */
+#grafico {
+    background-image: url(deevincci\ imagenes/0003.jpg) /* Replace with the actual image path */
+}
+
+#comunicacion {
+    background-image: url(deevincci\ imagenes/0005.jpg); /* Replace with the actual image path */
+}
+
+#fotografia {
+    background-image: url(deevincci\ imagenes/0001.jpg); /* Replace with the actual image path */
+}
+
+#web {
+    background-image: url(deevincci\ imagenes/0002.jpg); /* Replace with the actual image path */
+}
+
+#Music-and-ghostwriting {
+    background-image: url(deevincci\ imagenes/0004.jpg); /* Replace with the actual image path */
+}
+
+
+
+
+
+
+
+
+.site-footer {
+    padding-top: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #063c3d; /* Color de fondo (color de respaldo) */
+    background-image: url(deevincci\ imagenes/headerpp.jpg); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el área del pie de página */
+    background-position: center; /* Centra la imagen en el pie de página */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-logo {
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    height: 150px;
+    border-radius: 8px;
+}
+
+.footer-column p,  h3, .footer-column ul, .footer-column a {
+    font-size: small;
+    font-family: 'Trebuchet MS', sans-serif;
+    list-style-type: none; /* Elimina los estilos de lista para los <ul> */
+    color: #f9f6f6; /* Asegura que el texto es blanco */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    text-align: justify; /* Centra el texto */
+    padding: 10px 0; /* Añade relleno vertical, sin relleno horizontal */
+    margin: 10px 0; /* Añade un margen vertical para separar elementos */
+    transition: color 0.3s; /* Suaviza la transición de color */
+}
+
+.social-buttons a {
+    background-color: #f9f5f5; /* Fondo ligeramente más claro para los botones */
+    color: #063c3d; /* Color inicial del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 4px; /* Esquinas redondeadas para los botones */
+    padding: 8px 16px; /* Relleno dentro de los botones */
+    display: block; /* Cada botón de redes sociales en una nueva línea */
+    text-align: center; /* Centra el texto dentro de los botones */
+    margin: 5px 0; /* Espacio entre botones */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Suaviza la transición de fondo, color y transformación */
+}
+
+.social-buttons a:hover {
+    background-color: #f8950c; /* Cambia el color de fondo al pasar el ratón */
+    color: #ffffff; /* Cambia el color del texto a blanco al pasar el ratón */
+    transform: scale(1.1); /* Aumenta el tamaño del botón */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+        text-align: center;
+        letter-spacing: 0.1em;
+    }
+    
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    nav a {
+        display: block;
+        padding: 10px;
+    }
+
+    .two-columns {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid img {
+        height: auto;
+    }
+
+    .section-background {
+        height: auto;
+        padding: 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-column {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .site-footer {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+        letter-spacing: 0.05em;
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+
+    .gallery-grid {
+        gap: 20px;
+    }
+
+    .gallery-grid img {
+        height: auto;
+    }
+
+    .section-background {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-column {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .site-footer {
+        padding: 20px 10px;
+    }
+}
+
+
+
+
+
+
